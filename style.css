@@ -6,32 +6,37 @@
     --primary-bg:hsl(0, 0%, 8%);
     --container-bg:hsl(0, 0%, 12%);
     --link-bg: hsl(0, 0%, 20%);
+    --h-color:hsl(0, 0%, 100%);
+    --p-color:hsl(75, 94%, 57%);
 }
 
-body{
+main{
     height: 100vh;
     background-color: var(--primary-bg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
-.container{
-    width: 400;
+section{
+    
     background-color: var(--container-bg);
     text-align: center;
-    padding: 1rem 1rem 0.1rem;
+    padding: 2rem 1rem 0.1rem;
     border-radius: 10px;
+
 }
 
 h1{
     margin-bottom: 0.5rem;
-    color:  hsl(0, 0%, 100%);
+    color:  var(--h-color);
+    letter-spacing: 2px;
 }
 
 p{
-    color: hsl(75, 94%, 57%);
+    color: var(--p-color);
 }
 
 img{
@@ -51,10 +56,10 @@ img{
 .link a{
     background-color: var(--link-bg);
     display: block;
-    width: 300px;
+    width: 320px;
     margin: auto;
     margin-block: 4%;
-    padding: 3% 5%;
+    padding: 3% 6%;
     border: 1px solid transparent;
     border-radius: 10px;
 
