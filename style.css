@@ -2,11 +2,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-bg:hsl(0, 0%, 8%);
+    --container-bg:hsl(0, 0%, 12%);
+    --link-bg: hsl(0, 0%, 20%);
+}
 
 body{
     height: 100vh;
-    background-color: hsl(0, 0%, 8%)
-    ;
+    background-color: var(--primary-bg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,14 +19,14 @@ body{
 
 .container{
     width: 400;
-    background-color: hsl(0, 0%, 12%);
+    background-color: var(--container-bg);
     text-align: center;
     padding: 1rem 1rem 0.1rem;
     border-radius: 10px;
 }
 
 h1{
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
     color:  hsl(0, 0%, 100%);
 }
 
@@ -34,17 +38,18 @@ img{
   height: 100px;
   width: 100px;
   border-radius: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
-p:has(em){
+.word{
     color: aliceblue;
-    margin-block: 1rem;
+    margin-block: 1.3rem;
+    letter-spacing: 0.5px;
 }
 .link{
     padding-bottom: 3%;
 }
 .link a{
-    background-color: hsl(0, 0%, 20%);
+    background-color: var(--link-bg);
     display: block;
     width: 300px;
     margin: auto;
@@ -52,6 +57,7 @@ p:has(em){
     padding: 3% 5%;
     border: 1px solid transparent;
     border-radius: 10px;
+
 }
 
 a{
